@@ -1,0 +1,5 @@
+<launch>
+  <!-- Start the gripper_node.py script -->
+  <node name="teleop_node" pkg="vuilnisrobot" type="teleop_node.py" output="screen">
+  </node>
+</launch>
