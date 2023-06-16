@@ -12,8 +12,8 @@ time.sleep(2)
 # Send commands over the serial port
 try:
     while True:
-        command = input("Enter a command (w: forward, s: stop, x: Reverse, a: turn left, d: turn right): ")
-        if command in ['w', 's', 'x', 'a', 'd']:
+        command = input("Enter a command (w: forward, s: stop, x: Reverse, a: turn left, d: turn right, q: open gripper, e: close gripper): ")
+        if command in ['w', 's', 'x', 'a', 'd', 'q', 'e']:
             ser.write(command.encode())
             print(f"Sent command: {command}")
             response = ser.readline().decode(errors='ignore').strip()
